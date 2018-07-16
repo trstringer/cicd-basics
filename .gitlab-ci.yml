@@ -6,6 +6,10 @@ pages:
   - echo 'Nothing to do...'
   artifacts:
     paths:
-    - ./
+    - index.html
+    - css
+    - lib
+    - js
+    - plugin
   only:
   - master
