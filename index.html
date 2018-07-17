@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -26,14 +26,130 @@
 			<div class="slides">
 				<section data-markdown>
                     <textarea data-template>
-                        # Slide 1
+                        # CI/CD basics
+
+                        Thomas Stringer
                     </textarea>
                 </section>
 				<section data-markdown>
                     <textarea data-template>
-                        # Slide 2
+                        It's like testing...
 
-                        More things here...
+                        ...everybody says they do it, but...
+                    </textarea>
+                </section>
+				<section data-markdown>
+                    <textarea data-template>
+                        # What is it?
+
+                        - Continuous Integration
+                        - Continuous Delivery
+                        - Continuous Deployment
+
+                        *Continuous (definition) - Uninterrupted in time, sequence, substance, or extent*
+                    </textarea>
+                </section>
+				<section data-markdown>
+                    <textarea data-template>
+                        # Delivery vs. Deployment
+
+                        You *deliver* **artifacts**... (e.g. create a docker image and push it to a container registry)
+
+                        You *deploy* to an **environment**... (e.g. update the docker image reference and deployment in production)
+                    </textarea>
+                </section>
+				<section data-markdown>
+                    <textarea data-template>
+                        # Why do it?
+
+                        - Ensure production-ready software quality
+                        - Automated
+                        - Gain confidence in delivery
+                        - Remove as much human intervention (and room for error) as possible
+                    </textarea>
+                </section>
+				<section data-markdown>
+                    <textarea data-template>
+                        # Products
+
+                        - GitLab
+                        - Jenkins
+                        - Travis CI
+                        - Circle CI
+                        - VSTS
+                        - *and many... many more*
+                    </textarea>
+                </section>
+				<section data-markdown>
+                    <textarea data-template>
+                        # Pipeline components
+
+                        - Compiling/building
+                        - Linting
+                        - Unit tests
+                        - Integration tests
+                        - Artifact generation/delivery
+                        - Environment deployment
+
+                        *Fail the pipeline if any of these fail*
+                    </textarea>
+                </section>
+				<section data-markdown>
+                    <textarea data-template>
+                        # Pipeline-as-code
+
+                        - Most CI/CD products provide pipeline-as-code
+                            - Jenkins -> `Jenkinsfile`
+                            - Circle CI -> `.circlci/config.yml`
+                            - Travis CI -> `.travis.yml`
+                        - This should be part of your git repo and version-controlled
+                    </textarea>
+                </section>
+				<section data-markdown>
+                    <textarea data-template>
+                        # CI/CD thoughts...
+                    </textarea>
+                </section>
+				<section data-markdown>
+                    <textarea data-template>
+                        ## Do it from the start
+                    </textarea>
+                </section>
+				<section data-markdown>
+                    <textarea data-template>
+                        ## Understand the principles first and the technology second
+                    </textarea>
+                </section>
+				<section data-markdown>
+                    <textarea data-template>
+                        ## Like any lifecycle environment, your build server/environment has to be secure
+                    </textarea>
+                </section>
+				<section data-markdown>
+                    <textarea data-template>
+                        ## Code reviews are not the time to ensure style, linting, and passed tests
+                    </textarea>
+                </section>
+				<section data-markdown>
+                    <textarea data-template>
+                        ## It's better to start out strict instead of permissive
+                    </textarea>
+                </section>
+				<section data-markdown>
+                    <textarea data-template>
+                        # I want to know more...
+
+                        - Implement CI/CD... a lot
+                        - Read The Phoenix Project
+                        - Read The DevOps Handbook
+                        - Deploy production software
+                    </textarea>
+                </section>
+				<section data-markdown>
+                    <textarea data-template>
+                        **Minimize surprises in production**
+
+                        Questions?
                     </textarea>
                 </section>
 			</div>
